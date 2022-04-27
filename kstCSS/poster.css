@@ -1,0 +1,158 @@
+* {
+  font-family: "YUniverse-B";
+}
+
+.hotelhuman:before {
+  content: "";
+  display: block;
+  background: url("/adWepApp_1/images/hotelHuman.png") no-repeat center top;
+  width: 80%;
+  height: 0;
+  padding-top: 30%;
+  background-size: cover;
+  margin-top: -50%;
+  margin-left: 10%;
+}
+
+.sec1 {
+  position: relative;
+  background-image: url("/adWepApp_1/images/cloud.png");
+  background-color: #edfc9a;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.sec1 .topText {
+  position: relative;
+  padding-top: 30px;
+  color: #da76ff;
+  text-align: center;
+  font-size: 5vw;
+}
+
+@media (min-width: 992px) {
+  .sec1 .topText {
+    font-size: 28px;
+  }
+}
+
+.sec1:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url("/adWepApp_1/images/bgObject.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.sec1 .airport {
+  left: 0;
+  top: 35%;
+}
+
+.sec2 {
+  position: relative;
+  background-color: #da76ff;
+}
+
+.sec2 .borderbox {
+  border: 2px solid black;
+  border-radius: 40px 40px;
+}
+
+.sec2 .borderbox .boxtext {
+  color: #da76ff;
+  background-color: #3bd3ff;
+}
+
+.sec2 .borderbox .textcontent {
+  color: purple;
+  white-space: pre-line;
+  font-size: 1.2rem;
+}
+
+.sec2 .swiper-button-prev {
+  color: #edfc9a;
+}
+
+.sec2 .swiper-button-next {
+  color: #edfc9a;
+}
+
+.sec3 {
+  padding-top: 10%;
+  position: relative;
+  background-color: #edfc9a;
+}
+
+.sec3 .eventbox {
+  color: purple;
+}
+
+.sec3 .eventbox .eventButton {
+  background: transparent;
+  position: relative;
+  border: none;
+  z-index: 1;
+}
+
+.sec3 .eventbox .eventButton span {
+  border-radius: 40px 40px;
+  background-color: #da76ff;
+  display: block;
+}
+
+.sec3 .eventbox .eventButton::before {
+  content: "";
+  width: 93%;
+  height: 100%;
+  position: absolute;
+  border: none;
+  border-radius: 40px 40px;
+  background-color: black;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(5%, 20%);
+          transform: translate(5%, 20%);
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.sec3:before {
+  content: "";
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  background-image: url("/adWepApp_1/images/bannerContent.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  z-index: 10;
+}
+
+.star1 {
+  top: 0;
+  width: 10%;
+  right: 10%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.star2 {
+  width: 10%;
+  bottom: 0;
+  right: 50%;
+}
+
+@media (max-width: 767px) {
+  .sec3:before {
+    -webkit-transform: translate(50%, -20%) !important;
+            transform: translate(50%, -20%) !important;
+  }
+}
